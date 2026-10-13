@@ -1,0 +1,16 @@
+services:
+  lampmonitor:
+    build: .
+    container_name: lampmonitor
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      TZ: America/New_York          # time zone used in alert emails
+      LAMPMONITOR_USERNAME: admin
+      LAMPMONITOR_PASSWORD: change-me  # protects the web UI; set your own
+    volumes:
+      - lampmonitor-data:/data
+
+volumes:
+  lampmonitor-data:

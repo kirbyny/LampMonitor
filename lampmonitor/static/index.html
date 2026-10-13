@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LampMonitor</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%2316a34a'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23bbf7d0'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="brand-lamp" aria-hidden="true"></span>LampMonitor</a>
+    <nav>
+      <a href="#/" data-nav>Dashboard</a>
+      <a href="#/cameras" data-nav>Cameras</a>
+      <a href="#/events" data-nav>Events</a>
+      <a href="#/settings" data-nav>Settings</a>
+    </nav>
+  </header>
+  <main id="app" class="container"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
